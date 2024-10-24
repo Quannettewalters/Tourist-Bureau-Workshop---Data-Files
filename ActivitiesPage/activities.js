@@ -100,3 +100,5 @@ let activities = [
         price: 0.00 
     }
 ];
+
+//listing elements in dropdown

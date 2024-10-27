@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activities</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xxx" crossorigin="anonymous"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Activities</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xxx" crossorigin="anonymous"></script>
+        <script src="ActivitiesPage/activities.js"></script>
+        <script src="script/script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -34,18 +36,24 @@
 
 <select name="activities" id="activityCat">
     <option value="">Select Your Activity!</option>
-    <option value="">Adventures</option>
-    <option value="">Arts & Crafts</option>
-    <option value="">Museums</option>
-    <option value="">Wine Tastings</option>
-    <option value="">Other</option>
+    <option value="Adventures">Adventures</option>
+    <option value="Arts & Crafts">Arts & Crafts</option>
+    <option value="Museums">Museums</option>
+    <option value="Wine Tastings">Wine Tastings</option>
+    <option value="Other">Other</option>
 </select>
-<div class="form-group">
-    <label for="subCategory">Activity Choice</label>
+
+<div> Activities for Selected Category:</div>
+<select name="selectedCat" id="selectedCat">
+    <option value="">Select Activities Category</option>
+</select>
+
+<div class="form-group" id="choiceList">
+    <label for="subCategory">Activity Details</label>
     <label for="subCategory"></label>
-    <select name="subCategory" id="subCategory" class="form-control" size="10"></select>
+    <select name="subCategory" id="actDetails" class="form-control" size="10">
+    </select>
 
 </div>
-    <script src="activities.js"></script>
 </body>
 </html>

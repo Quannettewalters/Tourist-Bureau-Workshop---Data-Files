@@ -9,16 +9,15 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xxx"
         crossorigin="anonymous"></script>
-    <script src="ActivitiesPage/activities.js"></script>
-    <script src="script/script.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand">Activities</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        <script src="script/script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand">Activities</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,28 +37,25 @@
         </div>
     </nav>
     <div>Fun Things To Do!</div>
-
+    
     <select name="activities" id="activityCat">
         <option value="">Select Your Activity!</option>
     </select>
-
+    
     <div> Activities for Selected Category:</div>
     <select name="selectedCat" id="selectedCat">
         <option value="">Select Activities Category</option>
     </select>
 
-    <div class="form-group" id="choiceList">
-        <label for="subCategory">Activity Details</label>
-        <label for="subCategory"></label>
-        <select name="subCategory" id="actDetails" class="form-control" size="10">
-        </select>
-    </div>
-    <div class="form-group" id="ticketForm">
+    <!--Activity details-->
+    <div id="actDetails"> Activities Details</div>
+
+    <div class="form-group" id="ticketForm" style="display: none;">
         <h2>Purchase E-Ticket</h2>
         <form id="ticketPurchase">
             <label for="ticketCount">Number of tickets:</label>
             <input type="number" name="ticketCount" id="ticketCount" min="1" required
-                placeholder="1 ticket minimum"><br>
+            placeholder="1 ticket minimum"><br>
             <label for="custName">Name:</label>
             <input type="text" name="custName" id="custName" required><br>
             <label for="emailAddress">Email:</label>
@@ -70,6 +66,7 @@
             <button type="reset">Reset</button>
         </form>
     </div>
+    <script src="ActivitiesPage/activities.js"></script>
 </body>
 
 </html>

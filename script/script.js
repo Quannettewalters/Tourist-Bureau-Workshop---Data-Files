@@ -25,12 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Event listener for activity selection
     selectedCat.addEventListener("change", () => {
-        choiceList.innerHTML = ''; // Clear previous details
+        actDetails.innerHTML = ''; // Clear previous details
         const selectedId = selectedCat.value;
 
         const selectedActivity = activities.find(a => a.id === selectedId);
         if (selectedActivity) {
-            choiceList.innerHTML = `
+            actDetails.innerHTML = `
                 <p><strong>Name:</strong> ${selectedActivity.name}</p>
                 <p><strong>Description:</strong> ${selectedActivity.description}</p>
                 <p><strong>Location:</strong> ${selectedActivity.location}</p>

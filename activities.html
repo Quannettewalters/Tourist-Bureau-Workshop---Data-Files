@@ -49,5 +49,18 @@
     <select name="subCategory" id="actDetails" class="form-control" size="10">
     </select>
 </div>
+<h2>Purchase E-Ticket</h2>
+<div class="form-group" id="ticketForm">
+    <label for="ticketCount">Number of tickets:</label>
+    <input type="number" name="ticketCount" id="ticketCount" min="1" required placeholder="1 ticket minimum"><br>
+    <label for="custName">Name:</label>
+    <input type="text" name="custName" id="custName" required><br>
+    <label for="emailAddress">Email:</label>
+    <input type="text" name="emailAddress" id="emailAddress" required><br>
+    <label for="ccNumber">Credit Card Number:</label>
+    <input type="number" name="ccNumber" id="ccNumber" min="16" required><br>
+    <button type="submit">Purchase Tickets</button>
+    <button type="reset">Reset</button>
+</div>
 </body>
 </html>
